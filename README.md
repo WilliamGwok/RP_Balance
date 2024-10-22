@@ -4,7 +4,7 @@
 
 ## 仿真
 
-![image]([https://github.com/WilliamGwok/RP_Balance/blob/main/Figures/Webots/PixPin_2024-10-22_23-50-17.png])
+![image](https://github.com/WilliamGwok/RP_Balance/blob/main/Figures/Webots/PixPin_2024-10-22_23-50-17.png)
 
 **Webots\LinkLinkGo\controllers\Eva_Test_02**
 | 文件名 | 功能 |
