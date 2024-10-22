@@ -3,8 +3,6 @@
 其中：
 
 ## 仿真
-![Uploading image.png…]()
-
 
 **Webots\LinkLinkGo\controllers\Eva_Test_02**
 | 文件名 | 功能 |
