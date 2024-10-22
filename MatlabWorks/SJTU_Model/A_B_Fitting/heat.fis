@@ -1,0 +1,39 @@
+[System]
+Name='heat'
+Type='mamdani'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=5
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='mom'
+
+[Input1]
+Name='e'
+Range=[-300 300]
+NumMFs=5
+MF1='PB':'trimf',[100 300 300]
+MF2='PS':'trimf',[100 100 300]
+MF3='ZE':'trimf',[-200 0 200]
+MF4='NS':'trimf',[-300 -100 -100]
+MF5='NB':'trimf',[-300 -300 -100]
+
+[Output1]
+Name='u'
+Range=[10 70]
+NumMFs=5
+MF1='PB':'trimf',[50 70 70]
+MF2='PS':'trimf',[50 50 70]
+MF3='ZE':'trimf',[20 40 60]
+MF4='NS':'trimf',[10 30 30]
+MF5='NB':'trimf',[10 10 30]
+
+[Rules]
+1, 1 (1) : 1
+2, 2 (1) : 1
+3, 3 (1) : 1
+4, 4 (1) : 1
+5, 5 (1) : 1
