@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "encoder.h": "c",
+        "environment.h": "c",
+        "typeinfo": "c",
+        "dev_imu.h": "c",
+        "pid.h": "c",
+        "dev_encoder.h": "c",
+        "config_environment.h": "c",
+        "limits": "cpp",
+        "five_link.h": "c",
+        "config_math.h": "c",
+        "virtual_leg.h": "c",
+        "state_var.h": "c",
+        "straight_leg.h": "c",
+        "dev_motor.h": "c",
+        "dev_keyboard.h": "c",
+        "robot_control.h": "c",
+        "config_robot.h": "c",
+        "dev_all.h": "c"
+    }
+}

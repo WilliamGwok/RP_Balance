@@ -1,0 +1,259 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  basicTimeStep 1
+}
+Viewpoint {
+  orientation 0.25108164865604454 0.9596954600214026 0.1262641268233816 5.271647733841035
+  position -6.674610645352712 3.041835245689339 4.0125089135209615
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Robot {
+  translation 0 0.65 0
+  rotation -1 0 0 -5.307179586466759e-06
+  children [
+    DEF R_Leg HingeJoint {
+      jointParameters HingeJointParameters {
+        position 0.0033405645822008894
+        anchor -0.275 -0.05 0
+      }
+      device [
+        RotationalMotor {
+          name "R_Motor_Up"
+          maxTorque 25
+        }
+        PositionSensor {
+          name "R_Pos_Up"
+        }
+      ]
+      endPoint Solid {
+        translation -0.27500174964583135 -0.29987302916560427 -0.0008374176940297922
+        rotation 0.0016756128352252324 0.0016756300275348043 -0.999997192288877 1.5708102042985503
+        children [
+          DEF Wheel HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 0 1 0
+              anchor 0.25 -0.05 0
+            }
+            device [
+              DEF R_Pos_Up PositionSensor {
+                name "R_Pos_Down"
+              }
+              RotationalMotor {
+                name "R_Motor_Down"
+                maxTorque 25
+              }
+            ]
+            endPoint Solid {
+              translation 0.25 -0.05 0
+              children [
+                DEF Wheel Shape {
+                  appearance PBRAppearance {
+                    baseColor 0.666667 0 0
+                  }
+                  geometry Cylinder {
+                    height 0.05
+                    radius 0.1
+                  }
+                }
+              ]
+              boundingObject USE Wheel
+              physics Physics {
+                density -1
+                mass 0.5
+              }
+            }
+          }
+          DEF Leg Shape {
+            appearance PBRAppearance {
+            }
+            geometry Box {
+              size 0.5 0.05 0.1
+            }
+          }
+        ]
+        boundingObject USE Leg
+        physics Physics {
+          density -1
+          mass 1
+        }
+      }
+    }
+    DEF Body Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+      }
+      geometry Box {
+        size 0.5 0.3 0.4
+      }
+    }
+    Gyro {
+      name "My_Gyro"
+    }
+    InertialUnit {
+      name "My_Imu"
+    }
+    DEF L_Leg HingeJoint {
+      jointParameters HingeJointParameters {
+        position 0.0033277837186308336
+        anchor 0.275 -0.05 0
+      }
+      device [
+        DEF L_Pos_Up PositionSensor {
+          name "L_Pos_Up"
+        }
+        RotationalMotor {
+          name "L_Motor_Up"
+          maxTorque 25
+        }
+      ]
+      endPoint Solid {
+        translation 0.2750017497239063 -0.2998730391474471 -0.0008342240666114342
+        rotation 0.001669245782445999 0.00166924092404593 -0.9999972136227455 1.5707953899967553
+        children [
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 0 1 0
+              anchor 0.25 0.05 0
+            }
+            device [
+              PositionSensor {
+                name "L_Pos_Down"
+              }
+              RotationalMotor {
+                name "L_Motor_Down"
+                maxTorque 20
+              }
+            ]
+            endPoint Solid {
+              translation 0.25 0.05 0
+              children [
+                DEF Wheel Shape {
+                  appearance PBRAppearance {
+                  }
+                  geometry Cylinder {
+                    height 0.05
+                    radius 0.1
+                  }
+                }
+              ]
+              boundingObject USE Wheel
+              physics Physics {
+                density -1
+                mass 0.5
+              }
+            }
+          }
+          DEF Leg Shape {
+            appearance PBRAppearance {
+            }
+            geometry Box {
+              size 0.5 0.05 0.1
+            }
+          }
+        ]
+        name "solid(2)"
+        boundingObject USE Leg
+        physics Physics {
+          density -1
+          mass 1
+        }
+      }
+    }
+  ]
+  boundingObject USE Body
+  physics Physics {
+    density -1
+    mass 8
+  }
+  controller "Eva_Test_1"
+}
+Solid {
+  translation 1 0.4 0
+  rotation -0.014559890169780073 0.20975083466394046 0.9776464580593663 -2.0162503119127935e-17
+  children [
+    DEF Block Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "C:/Users/Lenovo/Desktop/截图/Snipaste_2023-09-16_20-01-05.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.5 0.7 1
+      }
+    }
+  ]
+  boundingObject USE Block
+  physics Physics {
+    density -1
+    mass 1000
+  }
+}
+UnevenTerrain {
+  translation 0 0 -0.01
+  size 100 0 100
+}
+DEF Blind Solid {
+  translation -0.3 0 2.68
+  rotation 0 0 1 1.5708
+  children [
+    DEF Blind Shape {
+      appearance PBRAppearance {
+      }
+      geometry Cylinder {
+        radius 0.03
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE Blind
+}
+DEF Blind Solid {
+  translation -0.3 0 2.78
+  rotation 0 0 1 1.5708
+  children [
+    DEF Blind Shape {
+      appearance PBRAppearance {
+      }
+      geometry Cylinder {
+        radius 0.03
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE Blind
+}
+DEF Blind Solid {
+  translation -0.3 0 2.87
+  rotation 0 0 1 1.5708
+  children [
+    DEF Blind Shape {
+      appearance PBRAppearance {
+      }
+      geometry Cylinder {
+        radius 0.03
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject USE Blind
+}
+DEF Blind Solid {
+  translation -0.3 0 2.96
+  rotation 0 0 1 1.5708
+  children [
+    DEF Blind Shape {
+      appearance PBRAppearance {
+      }
+      geometry Cylinder {
+        radius 0.03
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE Blind
+}

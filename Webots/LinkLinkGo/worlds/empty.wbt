@@ -1,0 +1,450 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  basicTimeStep 4
+}
+Viewpoint {
+  orientation -0.13146351458044744 -0.9858171518740146 -0.10431628542640119 1.4118951439246608
+  position -5.498335061147843 1.4397109889885997 1.5748998525175266
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+UnevenTerrain {
+  size 100 0 100
+}
+Robot {
+  translation 0 0.19 0
+  rotation 1 0 0 0
+  children [
+    Accelerometer {
+      name "My_Accelerometer"
+    }
+    InertialUnit {
+      name "My_Imu"
+    }
+    Gyro {
+      name "My_Gyro"
+    }
+    DEF R_F Transform {
+      translation -0.15 0.02 0.075
+      rotation 1 0 0 -1.5708
+      children [
+        HingeJoint {
+          jointParameters HingeJointParameters {
+          }
+          device [
+            RotationalMotor {
+              name "R_F_Motor"
+              maxTorque 25
+            }
+            PositionSensor {
+              name "R_F_Pos"
+            }
+          ]
+          endPoint Solid {
+            translation -0.009999999999999955 -0.07500000000000005 6.938893903907228e-18
+            rotation 1 0 0 0
+            children [
+              Transform {
+                translation 0 -0.075 0
+                rotation 1 0 0 2.5559
+                children [
+                  HingeJoint {
+                    jointParameters HingeJointParameters {
+                    }
+                    endPoint Solid {
+                      translation 0 -0.13500000000000068 0
+                      rotation 1 0 0 0
+                      children [
+                        Transform {
+                          translation -0.01 -0.135 0
+                          children [
+                            DEF Other HingeJoint {
+                              jointParameters HingeJointParameters {
+                              }
+                              endPoint SolidReference {
+                                solidName "R_B_Name"
+                              }
+                            }
+                            DEF Wheel HingeJoint {
+                              jointParameters HingeJointParameters {
+                              }
+                              device [
+                                RotationalMotor {
+                                  name "R_Wheel_Motor"
+                                  maxTorque 4.5
+                                }
+                                PositionSensor {
+                                  name "R_Wheel_Pos"
+                                }
+                              ]
+                              endPoint Solid {
+                                translation -0.009999999999999938 0 0
+                                rotation 9.813059844099406e-16 -1.1775671812919286e-16 1 1.570799999999998
+                                children [
+                                  DEF Wheel Shape {
+                                    appearance PBRAppearance {
+                                      baseColor 1 0.333333 0
+                                    }
+                                    geometry Cylinder {
+                                      height 0.02
+                                      radius 0.06
+                                    }
+                                  }
+                                ]
+                                boundingObject USE Wheel
+                                physics Physics {
+                                  density -1
+                                  mass 0.2
+                                }
+                              }
+                            }
+                          ]
+                        }
+                        DEF Shank Shape {
+                          appearance PBRAppearance {
+                            baseColor 1 0.666667 0
+                          }
+                          geometry Box {
+                            size 0.02 0.27 0.04
+                          }
+                        }
+                      ]
+                      name "solid2"
+                      boundingObject USE Shank
+                      physics Physics {
+                        density -1
+                        mass 0.2
+                      }
+                    }
+                  }
+                ]
+              }
+              DEF Thigh Shape {
+                appearance PBRAppearance {
+                  baseColor 1 0.666667 0
+                }
+                geometry Box {
+                  size 0.02 0.15 0.04
+                }
+              }
+            ]
+            name "solid(4)"
+            boundingObject USE Thigh
+            physics Physics {
+              density -1
+              mass 0.52
+            }
+          }
+        }
+      ]
+    }
+    DEF R_B Transform {
+      translation -0.15 0.02 -0.075
+      rotation 1 0 0 1.5708
+      children [
+        HingeJoint {
+          jointParameters HingeJointParameters {
+          }
+          device [
+            RotationalMotor {
+              name "R_B_Motor"
+              maxTorque 25
+            }
+            PositionSensor {
+              name "R_B_Pos"
+            }
+          ]
+          endPoint Solid {
+            translation -0.009999999999999941 -0.07499999999999996 0
+            rotation 1 0 0 0
+            children [
+              Transform {
+                translation 0 -0.075 0
+                rotation 1 0 0 -2.5559
+                children [
+                  HingeJoint {
+                    jointParameters HingeJointParameters {
+                    }
+                    endPoint Solid {
+                      translation 0 -0.1349999999999994 1.734723475976807e-18
+                      rotation 1 0 0 0
+                      children [
+                        DEF Shank Shape {
+                          appearance PBRAppearance {
+                            baseColor 1 0.666667 0
+                          }
+                          geometry Box {
+                            size 0.02 0.27 0.04
+                          }
+                        }
+                      ]
+                      name "R_B_Name"
+                      boundingObject USE Shank
+                      physics Physics {
+                        density -1
+                        mass 0.2
+                      }
+                    }
+                  }
+                ]
+              }
+              DEF Thigh Shape {
+                appearance PBRAppearance {
+                  baseColor 1 0.666667 0
+                }
+                geometry Box {
+                  size 0.02 0.15 0.04
+                }
+              }
+            ]
+            name "solid(1)"
+            boundingObject USE Thigh
+            physics Physics {
+              density -1
+              mass 0.52
+            }
+          }
+        }
+      ]
+    }
+    DEF L_F Transform {
+      translation 0.15 0.02 0.075
+      rotation 1 0 0 -1.5708
+      children [
+        HingeJoint {
+          jointParameters HingeJointParameters {
+          }
+          device [
+            RotationalMotor {
+              name "L_F_Motor"
+              maxTorque 25
+            }
+            PositionSensor {
+              name "L_F_Pos"
+            }
+          ]
+          endPoint Solid {
+            translation 0.009999999999999948 -0.07499999999999998 -6.938893903907228e-18
+            rotation 1 0 0 0
+            children [
+              Transform {
+                translation 0 -0.075 0
+                rotation 1 0 0 2.5559
+                children [
+                  HingeJoint {
+                    jointParameters HingeJointParameters {
+                    }
+                    endPoint Solid {
+                      translation 0 -0.1350000000000003 6.938893903907228e-18
+                      rotation 1 0 0 0
+                      children [
+                        Transform {
+                          translation 0.01 -0.135 0
+                          children [
+                            DEF Other HingeJoint {
+                              jointParameters HingeJointParameters {
+                              }
+                              endPoint SolidReference {
+                                solidName "L_B_Name"
+                              }
+                            }
+                            DEF Wheel HingeJoint {
+                              jointParameters HingeJointParameters {
+                              }
+                              device [
+                                RotationalMotor {
+                                  name "L_Wheel_Motor"
+                                  maxTorque 4.5
+                                }
+                                PositionSensor {
+                                  name "L_Wheel_Pos"
+                                }
+                              ]
+                              endPoint Solid {
+                                translation 0.009999999999999907 0 0
+                                rotation -5.49531351269568e-16 2.74765675634784e-16 1 1.5707999999999935
+                                children [
+                                  DEF Wheel Shape {
+                                    appearance PBRAppearance {
+                                      baseColor 1 0.333333 0
+                                    }
+                                    geometry Cylinder {
+                                      height 0.02
+                                      radius 0.06
+                                    }
+                                  }
+                                ]
+                                boundingObject USE Wheel
+                                physics Physics {
+                                  density -1
+                                  mass 0.2
+                                }
+                              }
+                            }
+                          ]
+                        }
+                        DEF Shank Shape {
+                          appearance PBRAppearance {
+                            baseColor 1 0.666667 0
+                          }
+                          geometry Box {
+                            size 0.02 0.27 0.04
+                          }
+                        }
+                      ]
+                      name "solid2"
+                      boundingObject USE Shank
+                      physics Physics {
+                        density -1
+                        mass 0.2
+                      }
+                    }
+                  }
+                ]
+              }
+              DEF Thigh Shape {
+                appearance PBRAppearance {
+                  baseColor 1 0.666667 0
+                }
+                geometry Box {
+                  size 0.02 0.15 0.04
+                }
+              }
+            ]
+            name "solid(3)"
+            boundingObject USE Thigh
+            physics Physics {
+              density -1
+              mass 0.52
+            }
+          }
+        }
+      ]
+    }
+    DEF L_B Transform {
+      translation 0.15 0.02 -0.075
+      rotation 1 0 0 1.5708
+      children [
+        HingeJoint {
+          jointParameters HingeJointParameters {
+          }
+          device [
+            RotationalMotor {
+              name "L_B_Motor"
+              maxTorque 25
+            }
+            PositionSensor {
+              name "L_B_Pos"
+            }
+          ]
+          endPoint Solid {
+            translation 0.00999999999999992 -0.07500000000000014 3.469446951953614e-18
+            rotation 1 0 0 0
+            children [
+              Transform {
+                translation 0 -0.075 0
+                rotation 1 0 0 -2.5559
+                children [
+                  HingeJoint {
+                    jointParameters HingeJointParameters {
+                    }
+                    endPoint Solid {
+                      translation 0 -0.13500000000000048 1.734723475976807e-18
+                      rotation 1 0 0 0
+                      children [
+                        DEF Shank Shape {
+                          appearance PBRAppearance {
+                            baseColor 1 0.666667 0
+                          }
+                          geometry Box {
+                            size 0.02 0.27 0.04
+                          }
+                        }
+                      ]
+                      name "L_B_Name"
+                      boundingObject USE Shank
+                      physics Physics {
+                        density -1
+                        mass 0.2
+                      }
+                    }
+                  }
+                ]
+              }
+              DEF Thigh Shape {
+                appearance PBRAppearance {
+                  baseColor 1 0.666667 0
+                }
+                geometry Box {
+                  size 0.02 0.15 0.04
+                }
+              }
+            ]
+            name "solid(2)"
+            boundingObject USE Thigh
+            physics Physics {
+              density -1
+              mass 0.52
+            }
+          }
+        }
+      ]
+    }
+    DEF Body Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+      }
+      geometry Box {
+        size 0.3 0.15 0.25
+      }
+    }
+  ]
+  boundingObject USE Body
+  physics Physics {
+    density -1
+    mass 10
+  }
+  controller "Eva_Test_02"
+}
+DEF Block Solid {
+  translation 4.64 0.2 0
+  children [
+    DEF Block Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "C:/Users/Lenovo/Desktop/截图/Snipaste_2023-10-06_10-02-05.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.2 0.4 0.6
+      }
+    }
+  ]
+  boundingObject USE Block
+  physics Physics {
+    density -1
+    mass 200
+  }
+}
+Solid {
+  translation 0.39 -0.151699 1.22937
+  rotation -0.7040625369050428 -0.09269243903183476 -0.7040625369050428 -2.9567353071795863
+  children [
+    DEF po Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 3 0.2 3
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE po
+}
