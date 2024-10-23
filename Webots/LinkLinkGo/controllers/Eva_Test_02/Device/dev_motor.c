@@ -36,7 +36,7 @@ void My_Motor_Init(void)
     
     if(i == R_Wheel_Motor || i == L_Wheel_Motor)
     {
-      wb_motor_set_position(Motor[i], INFINITY);
+      // wb_motor_set_position(Motor[i], INFINITY);
     }
   }
   

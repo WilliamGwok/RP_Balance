@@ -16,9 +16,9 @@ pid_info_t R_Leg_Length =
 
 pid_info_t L_Leg_Length = 
 {
-  .kp = 850.f,//850
+  .kp = 850.f,//750
   .ki = 0.1f,
-  .kd = 30000.f,//45000
+  .kd = 30000.f,
   .integral_max = 7.f,
   .out_max = 200.f,
 };

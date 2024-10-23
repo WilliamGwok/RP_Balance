@@ -1,26 +1,6 @@
 #include <webots/robot.h>
-// #include <math.h>
 #include <stdio.h> 
 #include <string.h>
-#include <webots/position_sensor.h>
-#include <webots/inertial_unit.h>  
-#include <webots/motor.h>
-#include <webots/gyro.h> 
-#include <webots/keyboard.h>
-#include <webots/accelerometer.h>
-
-#include <config_environment.h>
-#include <config_robot.h>
-#include <dev_encoder.h>
-#include <dev_motor.h>
-#include <dev_imu.h>
-#include <pid.h>
-#include <five_link.h>
-#include <config_math.h>
-#include <state_var.h>
-#include <virtual_leg.h>
-#include <straight_leg.h>
-#include <dev_keyboard.h>
 #include <robot_control.h>
 
 /*Debug*/
