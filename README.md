@@ -28,10 +28,7 @@
 
 ## 测试视频
 
-
-https://github.com/WilliamGwok/RP_Balance/issues/1#issue-2611977549
-
-https://github.com/user-attachments/issues/1#issue-2611977549
+<video src="https://github.com/WilliamGwok/RP_Balance/blob/main/Test_Video/Real-world_Testing/Slope.mp4" controls="controls" width="500" height="300"></video>
 
 
 
