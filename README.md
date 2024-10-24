@@ -28,7 +28,6 @@
 
 ## 测试视频
 
-<video src="https://github.com/WilliamGwok/RP_Balance/blob/main/Test_Video/Real-world_Testing/Slope.mp4" controls="controls" width="500" height="300"></video>
 
 
 
