@@ -4,9 +4,6 @@
 
 <img src="https://github.com/WilliamGwok/RP_Balance/blob/main/Figures/Webots/PixPin_2024-10-22_23-50-17.png" width="310px">
 
-
-**Webots\LinkLinkGo\controllers\Eva_Test_02**
-
 [主要代码](https://github.com/WilliamGwok/RP_Balance/tree/main/Webots/LinkLinkGo/controllers/Eva_Test_02)
 | 文件名 | 功能 |
 |---|---|
