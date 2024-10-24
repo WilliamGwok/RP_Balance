@@ -28,7 +28,7 @@
 
 ## 测试视频
 
-https://github.com/WilliamGwok/RP_Balance/issues/1#issue-2611977549
+
 
 
 
