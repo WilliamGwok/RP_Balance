@@ -27,7 +27,7 @@
 | Robot | 机器人顶层控制代码 |
 
 ## 测试视频
-
+https://github.com/WilliamGwok/RP_Balance/issues/1#issue-2611977549
 
 
 
