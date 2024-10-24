@@ -1,8 +1,9 @@
 # RP_Balance
 
 ## 前言
-<img src="https://github.com/WilliamGwok/RP_Balance/blob/main/Figures/%E5%A4%87%E8%B5%9B%E8%AE%B0%E5%BD%95/2024_1.jpg" width="410px">
-
+<div align=center>
+<img src="https://github.com/WilliamGwok/RP_Balance/blob/main/Figures/%E5%A4%87%E8%B5%9B%E8%AE%B0%E5%BD%95/2024_1.jpg" width="710px">
+</div>
 
 ## 建模与控制器设计
 
