@@ -1,7 +1,10 @@
 # RP_Balance
 
-## 建模与控制器设计
+## 前言
+<img src="https://github.com/WilliamGwok/RP_Balance/blob/main/Figures/%E5%A4%87%E8%B5%9B%E8%AE%B0%E5%BD%95/2024_1.jpg" width="410px">
 
+
+## 建模与控制器设计
 
 | 文件名 | 功能 | 文件链接 |
 |---|---|---|
@@ -11,9 +14,9 @@
 
 ## 仿真
 
-<img src="https://github.com/WilliamGwok/RP_Balance/blob/main/Figures/Webots/PixPin_2024-10-22_23-50-17.png" width="310px">
+<img src="https://github.com/WilliamGwok/RP_Balance/blob/main/Figures/Webots/PixPin_2024-10-22_23-50-17.png" width="410px">
 
-[主要代码](https://github.com/WilliamGwok/RP_Balance/tree/main/Webots/LinkLinkGo/controllers/Eva_Test_02)
+[仿真主要代码](https://github.com/WilliamGwok/RP_Balance/tree/main/Webots/LinkLinkGo/controllers/Eva_Test_02)
 | 文件名 | 功能 |
 |---|---|
 | Config | 仿真环境设置，机器人机械参数设置等 |
@@ -21,6 +24,9 @@
 | Model | 机器人模型分层，包括直腿模型，虚拟腿力计算等 |
 | Algorithm | pid算法，五连杆解算 |
 | Robot | 机器人顶层控制代码 |
+
+## 测试视频
+
 
 
 
