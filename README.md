@@ -46,6 +46,11 @@ https://github.com/user-attachments/assets/42d3e697-0503-4a66-8977-5c767b99fcbf
 
 ## 调车血泪史
 
+##### 贯穿始终的烧保护
+24年因为实验室硬件断代，很长的一段时间里电机保护是用一个烧一个，有几次甚至烧出明火了。后面是老队员帮忙才有了较为稳定的保护。
+<div align=center>
+<img src="https://github.com/WilliamGwok/RP_Balance/blob/main/Figures/%E5%A4%87%E8%B5%9B%E8%AE%B0%E5%BD%95/2024_1.jpg" width="710px">
+</div>
 
 
 
