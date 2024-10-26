@@ -1,7 +1,7 @@
 # RP_Balance
 
 ## 前言
-![image](https://github.com/user-attachments/assets/123d992e-4147-479a-b5e5-db1005fb4ac8)
+[image](https://github.com/user-attachments/assets/123d992e-4147-479a-b5e5-db1005fb4ac8)
 
 
 <div align=center>
