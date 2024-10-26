@@ -1,9 +1,6 @@
 # RP_Balance
 
 ## 前言
-[image](https://github.com/user-attachments/assets/123d992e-4147-479a-b5e5-db1005fb4ac8)
-
-
 <div align=center>
 <img src="https://github.com/WilliamGwok/RP_Balance/blob/main/Figures/%E5%A4%87%E8%B5%9B%E8%AE%B0%E5%BD%95/2024_1.jpg" width="710px">
 </div>
