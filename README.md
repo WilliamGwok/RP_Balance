@@ -50,9 +50,9 @@ https://github.com/user-attachments/assets/42d3e697-0503-4a66-8977-5c767b99fcbf
 24年因为实验室硬件断代，很长的一段时间里电机保护是用一个烧一个，有几次甚至烧出明火了。
 后面是老队员帮忙才有了较为稳定的保护。国赛还烧碳板，原因是有硅胶线破皮了（即使套了蛇皮管）。
 
-<center class="half">
-     <img src="https://github.com/WilliamGwok/RP_Balance/blob/main/Figures/%E5%A4%87%E8%B5%9B%E8%AE%B0%E5%BD%95/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241025215802.jpg" width="250"/><img src="https://github.com/WilliamGwok/RP_Balance/blob/main/Figures/%E5%A4%87%E8%B5%9B%E8%AE%B0%E5%BD%95/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202410252158021.jpg" width="300"/>
-</center>
+<div align=center>
+<img src="https://github.com/WilliamGwok/RP_Balance/blob/main/Figures/%E5%A4%87%E8%B5%9B%E8%AE%B0%E5%BD%95/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202410252158021.jpg" width="300px">
+</div>
 
 #### 电机损坏
 因为机械新队员缺乏经验，他在固定电机时夹了块打印件。
