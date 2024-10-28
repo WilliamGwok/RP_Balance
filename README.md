@@ -5,7 +5,7 @@
 <img src="https://github.com/WilliamGwok/RP_Balance/blob/main/Figures/%E5%A4%87%E8%B5%9B%E8%AE%B0%E5%BD%95/2024_1.jpg" width="710px">
 </div>
 <br>
-本项目为本人于2023~2024年在深圳大学RobotPilots实验室完成，供实验室新队员学习参考用。若有错误之处，欢迎指出。 </p>
+<p align="center">本项目为本人于2023~2024年在深圳大学RobotPilots实验室完成，供实验室新队员学习参考用。若有错误之处，欢迎指出。</p>
 
 ## 建模与控制器设计
 
