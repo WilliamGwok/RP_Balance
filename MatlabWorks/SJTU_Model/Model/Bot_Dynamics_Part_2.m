@@ -191,11 +191,11 @@ B_Ballance = subs(B, [X_replace;U], zeros(12, 1));
 C_Ballance = eye(10);
 D_Ballance = zeros(10, 4);
 
-Fuck_Them_All_1 = [g    rw   Rl   l_r   l_l  lw_r  lw_l   lb_r   lb_l   mw    Iw     Il_r   Il_l   mb    Ib     lc    Izz    ml];
-Fuck_Them_All_2 = [9.81 0.06 0.18 0.26 0.26  0.13  0.13   0.13   0.13   0.2  0.00036 0.3 0.3 10.00 0.1271 0.05  0.1083  1.46];
+Model_1 = [g    rw   Rl   l_r   l_l  lw_r  lw_l   lb_r   lb_l   mw    Iw     Il_r   Il_l   mb    Ib     lc    Izz    ml];
+Model_2 = [9.81 0.06 0.18 0.26 0.26  0.13  0.13   0.13   0.13   0.2  0.00036 0.3 0.3 10.00 0.1271 0.05  0.1083  1.46];
 
-A_Ballance = double(subs(A_Ballance, Fuck_Them_All_1, Fuck_Them_All_2));
-B_Ballance = double(subs(B_Ballance, Fuck_Them_All_1, Fuck_Them_All_2));
+A_Ballance = double(subs(A_Ballance, Model_1, Model_2));
+B_Ballance = double(subs(B_Ballance, Model_1, Model_2));
 
 Q = double(diag([1 1 1 1 1 1 1 1 5 2]));
 R = double(diag([1 1 1 1]));
