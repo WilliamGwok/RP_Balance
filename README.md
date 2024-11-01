@@ -16,14 +16,14 @@
 | Webots_Data_Estimate | 用于分析仿真读取的数据 | [DATA](https://github.com/WilliamGwok/RP_Balance/tree/main/MatlabWorks/Webots_Data_Estimate) |
 
 ### 核心代码
-#### 平衡底盘建模
-[files](https://github.com/WilliamGwok/RP_Balance/tree/main/MatlabWorks/SJTU_Model/Model)
+#### 平衡底盘建模[files](https://github.com/WilliamGwok/RP_Balance/tree/main/MatlabWorks/SJTU_Model/Model)
+
 列写动力学与运动学方程化简，计算系统A，B矩阵
 | 代码 | 功能 | 文件链接 |
 |---|---|---|
 | Bot_Dynamics_Part1 | 列些方程并化简，得到A,B矩阵（P1~P3） | [.m](https://github.com/WilliamGwok/RP_Balance/blob/main/MatlabWorks/SJTU_Model/Model/Bot_Dynamics_Part1.m) |
 
-#### 五连杆解算和VMC控制
+#### 五连杆解算和VMC控制[files](https://github.com/WilliamGwok/RP_Balance/tree/main/MatlabWorks/SJTU_Model/Model)
 角度关系与虚拟力求解
 | 代码 | 功能 | 文件链接 |
 |---|---|---|
