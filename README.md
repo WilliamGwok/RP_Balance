@@ -15,6 +15,16 @@
 | SJTU_Model | 全身建模与控制器设计，五连杆解算，增益矩阵拟合，AB矩阵拟合 | [SJTU](https://github.com/WilliamGwok/RP_Balance/tree/main/MatlabWorks/SJTU_Model) |
 | Webots_Data_Estimate | 用于分析仿真读取的数据 | [DATA](https://github.com/WilliamGwok/RP_Balance/tree/main/MatlabWorks/Webots_Data_Estimate) |
 
+###核心代码
+#### 平衡底盘建模
+
+#### 五连杆解算和VMC控制
+
+#### Lqr控制器与K矩阵拟合
+
+#### 系统A，B矩阵拟合与类MPC控制思想
+
+
 ## 仿真
 
 <img src="https://github.com/WilliamGwok/RP_Balance/blob/main/Figures/Webots/PixPin_2024-10-22_23-50-17.png" width="410px">
