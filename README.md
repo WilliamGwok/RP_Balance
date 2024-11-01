@@ -94,6 +94,9 @@ https://github.com/user-attachments/assets/42d3e697-0503-4a66-8977-5c767b99fcbf
 
 https://github.com/user-attachments/assets/464f6e4d-6a7e-44c8-b6e9-2862852114d7
 
+电机损坏后有一边腿无法正常响应
+https://github.com/user-attachments/assets/495ed83a-8a68-4ea7-8e44-cc3647adb917
+
 
 
 
