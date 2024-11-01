@@ -16,14 +16,13 @@
 | Webots_Data_Estimate | 用于分析仿真读取的数据 | [DATA](https://github.com/WilliamGwok/RP_Balance/tree/main/MatlabWorks/Webots_Data_Estimate) |
 
 ### 核心代码
-#### 平衡底盘建模[files](https://github.com/WilliamGwok/RP_Balance/tree/main/MatlabWorks/SJTU_Model/Model)
-
+#### 平衡底盘建模
 列写动力学与运动学方程化简，计算系统A，B矩阵
 | 代码 | 功能 | 文件链接 |
 |---|---|---|
 | Bot_Dynamics_Part1 | 列些方程并化简，得到A,B矩阵（P1~P3） | [.m](https://github.com/WilliamGwok/RP_Balance/blob/main/MatlabWorks/SJTU_Model/Model/Bot_Dynamics_Part1.m) |
 
-#### 五连杆解算和VMC控制[files](https://github.com/WilliamGwok/RP_Balance/tree/main/MatlabWorks/SJTU_Model/Model)
+#### 五连杆解算和VMC控制
 角度关系与虚拟力求解
 | 代码 | 功能 | 文件链接 |
 |---|---|---|
@@ -31,8 +30,12 @@
 | Five_Link_Base | 角度关系解算与虚拟力计算 | [.m](https://github.com/WilliamGwok/RP_Balance/blob/main/MatlabWorks/SJTU_Model/Model/Five_Link_Base.m) |
 
 #### Lqr控制器与K矩阵拟合
-
 该轮足底盘采用五连杆结构，其腿长可变。因此底盘模型会随着腿长变化而改变，需要求得K矩阵关于腿长拟合的系数
+| 代码 | 功能 | 文件链接 |
+|---|---|---|
+| Master | 拟合主函数 | [.m](https://github.com/WilliamGwok/RP_Balance/blob/main/MatlabWorks/SJTU_Model/K_L_Fitting/Master.m) |
+| Func_Cal_K | K矩阵计算 | [.m](https://github.com/WilliamGwok/RP_Balance/blob/main/MatlabWorks/SJTU_Model/K_L_Fitting/Func_Cal_K.m) |
+
 
 #### 系统A，B矩阵拟合与类MPC控制思想
 
