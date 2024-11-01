@@ -17,16 +17,27 @@
 
 ### 核心代码
 #### 平衡底盘建模
+[files](https://github.com/WilliamGwok/RP_Balance/tree/main/MatlabWorks/SJTU_Model/Model)
 列写动力学与运动学方程化简，计算系统A，B矩阵
+| 代码 | 功能 | 文件链接 |
+|---|---|---|
+| Bot_Dynamics_Part1 | 列些方程并化简，得到A,B矩阵（P1~P3） | [.m](https://github.com/WilliamGwok/RP_Balance/blob/main/MatlabWorks/SJTU_Model/Model/Bot_Dynamics_Part1.m) |
 
 #### 五连杆解算和VMC控制
 角度关系与虚拟力求解
+| 代码 | 功能 | 文件链接 |
+|---|---|---|
+| Centroid | 对连杆质心坐标，转动惯量的求解 | [.m](https://github.com/WilliamGwok/RP_Balance/blob/main/MatlabWorks/SJTU_Model/Model/Centroid.m) |
+| Five_Link_Base | 角度关系解算与虚拟力计算 | [.m](https://github.com/WilliamGwok/RP_Balance/blob/main/MatlabWorks/SJTU_Model/Model/Five_Link_Base.m) |
 
 #### Lqr控制器与K矩阵拟合
+
 该轮足底盘采用五连杆结构，其腿长可变。因此底盘模型会随着腿长变化而改变，需要求得K矩阵关于腿长拟合的系数
 
 #### 系统A，B矩阵拟合与类MPC控制思想
-为了解决机器人在驱动轮受阻突变（光滑或起伏路面）时失控的问题，参考了MPC控制的思想，通过机器人当前一刻的状态和输入来预测下一刻机器人的状态，根据状态预测与实际的差值对驱动轮输出转矩进行补偿
+
+为了解决机器人在驱动轮受阻突变（光滑或起伏路面）时失控的问题，参考了MPC控制的思想，通过机器人当前一刻的状态和输入来预测下一刻机器人的状态，根据状态预测与实际的差值对驱动轮输出转矩进行补偿。
+与K矩阵需要拟合的原因相同，采用该方法需要对A，B矩阵进行拟合
 
 
 
