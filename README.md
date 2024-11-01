@@ -41,6 +41,9 @@
 
 为了解决机器人在驱动轮受阻突变（光滑或起伏路面）时失控的问题，参考了MPC控制的思想，通过机器人当前一刻的状态和输入来预测下一刻机器人的状态，根据状态预测与实际的差值对驱动轮输出转矩进行补偿。
 与K矩阵需要拟合的原因相同，采用该方法需要对A，B矩阵进行拟合
+| 代码 | 功能 | 文件链接 |
+|---|---|---|
+| A_B_Mater | A,B矩阵拟合主代码 | [.m](https://github.com/WilliamGwok/RP_Balance/blob/main/MatlabWorks/SJTU_Model/A_B_Fitting/A_B_Master.m) |
 
 
 
