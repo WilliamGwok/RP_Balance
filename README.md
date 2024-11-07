@@ -7,6 +7,8 @@
 <br>
 <p align="center">本项目为本人于2023~2024年在深圳大学RobotPilots实验室完成，供实验室新队员学习参考用，将会在24年末持续更新。若有错误之处，欢迎指出。</p>
 
+<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=VmRmZGdmb2ZnYG4WMzs3Pzp4JSwjeDMyI3g1OA" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_01.png"/></a>
+
 ## 建模与控制器设计
 
 | 文件名 | 功能 | 文件链接 |
