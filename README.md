@@ -1,3 +1,7 @@
+### English Version Please Click:[ENG_README](https://github.com/WilliamGwok/RP_Balance/blob/main/README_ENG.md)
+
+
+
 # RP_Balance
 
 ## 前言
