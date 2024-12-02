@@ -7,6 +7,8 @@
 <br>
 <p align="center">本项目为本人于2023~2024年在深圳大学RobotPilots实验室完成，供实验室新队员学习参考用，将会在24年末持续更新。若有错误之处，欢迎指出。</p>
 
+<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=VmRmZGdmb2ZnYG4WMzs3Pzp4JSwjeDMyI3g1OA" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_01.png"/></a>
+
 ## 建模与控制器设计
 
 | 文件名 | 功能 | 文件链接 |
@@ -41,6 +43,9 @@
 
 为了解决机器人在驱动轮受阻突变（光滑或起伏路面）时失控的问题，参考了MPC控制的思想，通过机器人当前一刻的状态和输入来预测下一刻机器人的状态，根据状态预测与实际的差值对驱动轮输出转矩进行补偿。
 与K矩阵需要拟合的原因相同，采用该方法需要对A，B矩阵进行拟合
+| 代码 | 功能 | 文件链接 |
+|---|---|---|
+| A_B_Mater | A,B矩阵拟合主代码 | [.m](https://github.com/WilliamGwok/RP_Balance/blob/main/MatlabWorks/SJTU_Model/A_B_Fitting/A_B_Master.m) |
 
 
 
@@ -90,6 +95,10 @@ https://github.com/user-attachments/assets/42d3e697-0503-4a66-8977-5c767b99fcbf
 这块打印件在调试过程中因电机发热或振动产生形变，导致后续维护的时候螺丝拧进了电机线圈。
 
 https://github.com/user-attachments/assets/464f6e4d-6a7e-44c8-b6e9-2862852114d7
+
+电机损坏后有一边腿无法正常响应
+
+https://github.com/user-attachments/assets/495ed83a-8a68-4ea7-8e44-cc3647adb917
 
 
 
