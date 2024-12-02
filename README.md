@@ -1,5 +1,5 @@
-### English Version Please Click:[ENG_README](https://github.com/WilliamGwok/RP_Balance/blob/main/README_ENG.md)
-
+### English Version Please Click: [ENG_README](https://github.com/WilliamGwok/RP_Balance/blob/main/README_ENG.md)
+### 日本語バージョンは: [JAP_README](https://github.com/WilliamGwok/RP_Balance/blob/main/README_JAP.md)
 
 
 # RP_Balance
